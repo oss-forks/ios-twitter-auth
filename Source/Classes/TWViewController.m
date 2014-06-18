@@ -26,7 +26,8 @@
 
 @import Accounts;
 
-#import "OAuth+Additions.h"
+#import "../Other/TWiOSReverseAuthExample-Prefix.pch"
+#import "../Vendor/ABOAuthCore/OAuth+Additions.h"
 #import "TWAPIManager.h"
 #import "TWSignedRequest.h"
 #import "TWViewController.h"

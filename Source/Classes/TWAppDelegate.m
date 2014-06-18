@@ -24,6 +24,7 @@
 //    USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#import "../Other/TWiOSReverseAuthExample-Prefix.pch"
 #import "TWAppDelegate.h"
 #import "TWViewController.h"
 

@@ -24,7 +24,8 @@
 //    USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "OAuthCore.h"
+#import "../Other/TWiOSReverseAuthExample-Prefix.pch"
+#import "../Vendor/ABOAuthCore/OAuthCore.h"
 #import "TWSignedRequest.h"
 
 #define TW_HTTP_METHOD_GET @"GET"
@@ -111,6 +112,12 @@ static NSString *gTWConsumerSecret;
 }
 
 // OBFUSCATE YOUR KEYS!
++ (void)setConstumerKey:(NSString *)consumerKey secret:(NSString *)secret
+{
+	gTWConsumerKey = [consumerKey copy];
+	gTWConsumerSecret = [secret copy];
+}
+
 + (NSString *)consumerKey
 {
     if (!gTWConsumerKey) {
