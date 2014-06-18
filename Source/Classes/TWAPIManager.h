@@ -24,8 +24,6 @@
 //    USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-@import Foundation;
-
 @class ACAccount;
 
 typedef void(^ReverseAuthResponseHandler)(NSData *responseData, NSError *error);

@@ -24,8 +24,6 @@
 //    USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-@import Foundation;
-
 enum TWSignedRequestMethod {
     TWSignedRequestMethodGET,
     TWSignedRequestMethodPOST,
