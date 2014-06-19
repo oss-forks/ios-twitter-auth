@@ -30,6 +30,8 @@ typedef void(^ReverseAuthResponseHandler)(NSData *responseData, NSError *error);
 
 @interface TWAPIManager : NSObject
 
++(TWAPIManager *)sharedInstance;
+
 /**
  *  Obtains the access token and secret for |account|.
  *

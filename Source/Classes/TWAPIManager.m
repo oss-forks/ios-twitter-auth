@@ -37,6 +37,14 @@ typedef void(^TWAPIHandler)(NSData *data, NSError *error);
 
 @implementation TWAPIManager
 
++(TWAPIManager *)sharedInstance
+{
+	static TWAPIManager * instance;
+	if (!instance)
+		instance = [[TWAPIManager alloc] init];
+	return instance;
+}
+
 /**
  *  Ensures that we have a consumer key and secret configured
  *
